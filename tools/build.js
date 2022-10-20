@@ -1,10 +1,12 @@
-var glob = require( 'glob' )
-  , path = require( 'path' )
-  , fs = require('fs')
-  , child_process = require('child_process')
+import pkg from 'glob';
+const { sync } = pkg;
 
-const compileMetadata = require('./src/plugin.js')
-const categories = JSON.parse(fs.readFileSync('./categories.json'))["categories"]
+import { basename } from 'path'
+import { readFileSync, existsSync, cpSync, writeFileSync } from 'fs'
+import { execSync } from 'child_process'
+
+import compileMetadata from './src/plugin.js'
+const categories = JSON.parse(readFileSync('./categories.json'))["categories"]
 
 /**
  * packageFiles installs plugins by running ./package.sh (if it exists) or by just copying the files into ./dist/plugins
@@ -15,31 +17,31 @@ const packageFiles = (dir) => {
   console.log("Packaging ", dir)
 
   const packageScript = `${dir}/package.sh`
-  if (fs.existsSync(packageScript)) {
+  if (existsSync(packageScript)) {
     console.log(`Package script ${packageScript} exists, running it`)
-    child_process.execSync(packageScript)
+    execSync(packageScript)
   } else {
     console.log(`Package script ${packageScript} does not exist, copying files`)
 
-    const target = path.basename(dir)
+    const target = basename(dir)
 
-    fs.cpSync(dir, `./dist/plugins/${target}`, { recursive: true })
+    cpSync(dir, `./dist/plugins/${target}`, { recursive: true })
   }    
   console.log("")
 }
 
 console.log("[1/3] Packaging plugins into ./dist")
-glob.sync('./plugins/*').forEach(collection => packageFiles(collection))
+sync('./plugins/*').forEach(collection => packageFiles(collection))
 
 console.log("[2/3] Compiling Plugin metadata")
 var metadata = []
-glob.sync( './dist/plugins/*' ).forEach(collection => {
+sync( './dist/plugins/*' ).forEach(collection => {
   const data = compileMetadata(collection)
   metadata.push(...data)
 })
 
 console.log("Writing ./dist/plugins.json")
-fs.writeFileSync("./dist/plugins.json", JSON.stringify(metadata, undefined, 2))
+writeFileSync("./dist/plugins.json", JSON.stringify(metadata, undefined, 2))
 
 console.log("[3/3] Writing dist/index.js")
 let vendors = []
@@ -67,12 +69,16 @@ const Categories = ${JSON.stringify(categories, undefined, 2)};
 
 const Keywords = ${JSON.stringify(keywords, undefined, 2)};
 
-export {
+const WAMCommunity = {
   Plugins,
   Categories,
   Vendors,
   Keywords
 };
 
+export {Plugins, Categories, Vendors, Keywords};
+
+export default WAMCommunity;
+
 `
-fs.writeFileSync("./dist/index.js", code)
+writeFileSync("./dist/index.js", code)
