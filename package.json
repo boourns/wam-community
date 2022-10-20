@@ -1,6 +1,6 @@
 {
   "name": "wam-community",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A collection of prebuilt Web Audio Modules ready for use",
   "main": "dist/index.js",
   "scripts": {
