@@ -29,7 +29,6 @@ const packageFiles = (dir) => {
 console.log("[1/3] Packaging plugins into ./dist")
 glob.sync('./plugins/*').forEach(collection => packageFiles(collection))
 
-
 console.log("[2/3] Compiling Plugin metadata")
 var metadata = []
 glob.sync( './dist/plugins/*' ).forEach(collection => {
@@ -37,6 +36,5 @@ glob.sync( './dist/plugins/*' ).forEach(collection => {
   metadata.push(...data)
 })
 
-fs.writeFileSync("./dist/plugins.json", JSON.stringify(metadata))
-
-console.log(metadata)
+console.log("Writing ./dist/plugins.json")
+fs.writeFileSync("./dist/plugins.json", JSON.stringify(metadata, undefined, 2))
