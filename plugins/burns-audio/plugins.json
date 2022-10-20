@@ -2,11 +2,11 @@
     "plugins": [
         {
             "path": "audio_input",
-            "category": ["", "Utility"]
+            "category": ["Effect", "Utility"]
         },
         {
             "path": "distortion",
-            "category": ["Audio", "Effect"]
+            "category": ["Effect", "Distortion"]
         },
         {
             "path": "functionseq",

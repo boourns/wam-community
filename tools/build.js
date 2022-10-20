@@ -1,26 +1,42 @@
 var glob = require( 'glob' )
   , path = require( 'path' )
   , fs = require('fs')
-const { exit } = require('process')
+  , child_process = require('child_process')
+
+const compileMetadata = require('./src/plugin.js')
 /**
- * packageCollection installs plugins by running ./package.sh (if it exists) or by just copying the files into ./dist/plugins
- * @param dir string
+ * packageFiles installs plugins by running ./package.sh (if it exists) or by just copying the files into ./dist/plugins
+ * @param {string} dir 
  *  
  * */ 
-const packageCollection = (dir) => {
+const packageFiles = (dir) => {
   console.log("Packaging ", dir)
 
   const packageScript = `${dir}/package.sh`
   if (fs.existsSync(packageScript)) {
     console.log(`Package script ${packageScript} exists, running it`)
+    child_process.execSync(packageScript)
   } else {
     console.log(`Package script ${packageScript} does not exist, copying files`)
 
-    fs.cpSync(dir, './dist/plugins', { recursive: true })
+    const target = path.basename(dir)
+
+    fs.cpSync(dir, `./dist/plugins/${target}`, { recursive: true })
   }    
   console.log("")
 }
 
-glob.sync( './plugins/*' ).forEach( ( collection ) => {
-    packageCollection(collection)
-});
+console.log("[1/3] Packaging plugins into ./dist")
+glob.sync('./plugins/*').forEach(collection => packageFiles(collection))
+
+
+console.log("[2/3] Compiling Plugin metadata")
+var metadata = []
+glob.sync( './dist/plugins/*' ).forEach(collection => {
+  const data = compileMetadata(collection)
+  metadata.push(...data)
+})
+
+fs.writeFileSync("./dist/plugins.json", JSON.stringify(metadata))
+
+console.log(metadata)
