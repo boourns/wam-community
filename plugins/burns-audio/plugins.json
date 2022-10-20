@@ -1,0 +1,96 @@
+{
+    "plugins": [
+        {
+            "path": "audio_input",
+            "category": ["", "Utility"]
+        },
+        {
+            "path": "distortion",
+            "category": ["Audio", "Effect"]
+        },
+        {
+            "path": "functionseq",
+            "category": ["MIDI", "Sequencer"]
+        },
+        {
+            "path": "microkorg_editor",
+            "category": ["MIDI", "External Device"]
+        },		
+        {
+            "path": "midi_output",
+            "category": ["MIDI", "Utility"]
+        },
+        {
+            "path": "randomizer",
+            "category": ["Modulation", "Modulator"]
+        },		
+        {
+            "path": "soundfont",
+            "category": ["Instrument", "Sampler"]
+        },
+        {
+            "path": "video_butterchurn",
+            "category": ["Video", "Generator"]
+        },	
+        {
+            "path": "audio_track",
+            "category": ["Instrument", "Audio Player"]
+        },
+        {
+            "path": "drumsampler",
+            "category": ["Instrument", "Sampler"]
+        },
+        {
+            "path": "midi_debug",
+            "category": ["MIDI", "Utility"]
+        },
+        {
+            "path": "modal",
+            "category": ["Instrument", "Synthesizer"]
+        },
+        {
+            "path": "reverb",
+            "category": ["Effect", "Reverb"]
+        },
+        {
+            "path": "stepmod",
+            "category": ["Modulation", "Sequencer"]
+        },	
+        {
+            "path": "delay",
+            "category": ["Effect", "Delay"]
+        },		
+        {
+            "path": "external_instrument",
+            "category": ["MIDI", "External Device"]
+        },
+        {
+            "path": "midi_input",
+            "category": ["MIDI", "External Device"]
+        },
+        {
+            "path": "pianoroll",
+            "category": ["MIDI", "Sequencer"]
+        },
+        {
+            "path": "simpleEQ",
+            "category": ["Effect", "EQ"]
+        },	
+        {
+            "path": "synth101",
+            "category": ["Instrument", "Synthesizer"]
+        },
+        {
+            "path": "video_isf",
+            "category": ["Video", "Effect"]
+        },	
+        {
+            "path": "video_input",
+            "category": ["Video", "Generator"]
+        },		
+        {
+            "path": "video_threejs",
+            "category": ["Video", "Generator"]
+        }    
+    ]
+}

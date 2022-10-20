@@ -1,0 +1,9 @@
+{
+    "categories": {
+        "MIDI": ["Sequencer", "Utility", "External Device"],
+        "Instrument": ["Synthesizer", "Sampler", "Audio Player"],
+        "Effect": ["Distortion", "Delay", "EQ", "Utility"],
+        "Video": ["Generator", "Filter", "Utility"],
+        "Modulation": ["Sequencer", "Modulator"]
+    }
+}
