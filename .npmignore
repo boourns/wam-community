@@ -5,5 +5,4 @@ plugins/*
 .github/*
 tools/*
 .gitmodules
-
-
+example/*

@@ -1,7 +1,7 @@
-var fs = require('fs')
-const path = require('path')
+import { readFileSync } from 'fs'
+import { basename } from 'path'
 
-const categories = JSON.parse(fs.readFileSync('./categories.json'))["categories"]
+const categories = JSON.parse(readFileSync('./categories.json'))["categories"]
 
 const validateCategory = (plugin) => {
     if (plugin.category.length != 2) {
@@ -30,7 +30,7 @@ const processPlugin = ((dir, plugin) => {
     validateCategory(plugin)
     
     console.log(`${dir}/${plugin.path}: Reading descriptor`)
-    const descriptor = JSON.parse(fs.readFileSync(`${dir}/${plugin.path}/descriptor.json`))
+    const descriptor = JSON.parse(readFileSync(`${dir}/${plugin.path}/descriptor.json`))
     validateDescriptor(descriptor)
 
     let entry = {
@@ -42,7 +42,7 @@ const processPlugin = ((dir, plugin) => {
         category: plugin.category,
         thumbnail: plugin.thumbnail,
         version: plugin.version,
-        path: `${path.basename(dir)}/${plugin.path}`
+        path: `${basename(dir)}/${plugin.path}`
     }
 
     return entry
@@ -54,9 +54,9 @@ const processPlugin = ((dir, plugin) => {
 */
 const compileMetadata = (dir) => {
     console.log(`Reading plugin list for ${dir}`)
-    const plugins = JSON.parse(fs.readFileSync(`${dir}/plugins.json`))
+    const plugins = JSON.parse(readFileSync(`${dir}/plugins.json`))
     return plugins["plugins"].map(plugin => processPlugin(dir, plugin))
 }
 
 
-module.exports = compileMetadata
+export default compileMetadata
