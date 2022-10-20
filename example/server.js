@@ -13,7 +13,11 @@ ${Plugins.map(p => `<a href="/plugins/${p.path}/index.js">${p.name}</a>`).join("
     res.status(200).send(body)
 })
 
-app.use("/plugins", express.static('../dist/plugins'))
+app.use("/plugins", express.static('../dist/plugins',{
+    setHeaders: function(res, path) {
+        res.set("Access-Control-Allow-Origin", "*");
+    }
+}))
 
 app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
