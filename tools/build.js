@@ -4,6 +4,8 @@ var glob = require( 'glob' )
   , child_process = require('child_process')
 
 const compileMetadata = require('./src/plugin.js')
+const categories = JSON.parse(fs.readFileSync('./categories.json'))["categories"]
+
 /**
  * packageFiles installs plugins by running ./package.sh (if it exists) or by just copying the files into ./dist/plugins
  * @param {string} dir 
@@ -38,3 +40,39 @@ glob.sync( './dist/plugins/*' ).forEach(collection => {
 
 console.log("Writing ./dist/plugins.json")
 fs.writeFileSync("./dist/plugins.json", JSON.stringify(metadata, undefined, 2))
+
+console.log("[3/3] Writing dist/index.js")
+let vendors = []
+metadata.forEach(m => {
+  if (!vendors.includes(m.vendor)) {
+    vendors.push(m.vendor)
+  }
+})
+
+let keywords = []
+metadata.forEach(m => {
+  m.keywords.forEach(t => {
+    if (!keywords.includes(t)) {
+      keywords.push(t)
+    }
+  })
+})
+
+const code = `
+const Plugins = ${JSON.stringify(metadata, undefined, 2)};
+
+const Vendors = ${JSON.stringify(vendors, undefined, 2)};
+
+const Categories = ${JSON.stringify(categories, undefined, 2)};
+
+const Keywords = ${JSON.stringify(keywords, undefined, 2)};
+
+export {
+  Plugins,
+  Categories,
+  Vendors,
+  Keywords
+};
+
+`
+fs.writeFileSync("./dist/index.js", code)

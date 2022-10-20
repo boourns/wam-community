@@ -36,6 +36,7 @@ const processPlugin = ((dir, plugin) => {
     let entry = {
         name: descriptor.name,
         vendor: descriptor.vendor,
+        website: descriptor.website,
         description: descriptor.description,
         keywords: descriptor.keywords,
         category: plugin.category,

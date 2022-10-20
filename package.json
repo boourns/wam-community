@@ -2,7 +2,7 @@
   "name": "wam-community",
   "version": "0.0.1",
   "description": "A collection of prebuilt Web Audio Modules ready for use",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "clean": "./tools/clean.sh",
     "build": "yarn install && node ./tools/build.js",
