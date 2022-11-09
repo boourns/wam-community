@@ -82,3 +82,5 @@ export default WAMCommunity;
 
 `
 writeFileSync("./dist/index.js", code)
+
+cpSync("./index.d.ts", `./dist/index.d.ts`)
