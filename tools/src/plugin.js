@@ -19,7 +19,9 @@ const validateCategory = (plugin) => {
 }
 
 const validateDescriptor = (descriptor) => {
-
+    if (!descriptor.identifier) {
+        throw new Error("descriptor must have an 'identifier' field with content like 'com.myName.wamName'.")
+    }
 }
 
 /**

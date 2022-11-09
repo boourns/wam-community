@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/boourns/wam-community#readme",
   "devDependencies": {
-    "burns-audio-wam": "^0.2.30",
+    "burns-audio-wam": "^0.2.31",
     "glob": "^8.0.3"
   }
 }
