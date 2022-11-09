@@ -1,4 +1,4 @@
-import { readFileSync } from 'fs'
+import { existsSync, readFileSync } from 'fs'
 import { basename } from 'path'
 
 const categories = JSON.parse(readFileSync('./categories.json'))["categories"]
@@ -26,6 +26,12 @@ const validateDescriptor = (descriptor) => {
  * processPlugin validates a single plugin entry
  */
 const processPlugin = ((dir, plugin) => {
+    console.log(`${dir}/${plugin.path}: Confirming entry point exists`)
+    const entryPoint = `${dir}/${plugin.path}/index.js`
+    if (!existsSync(entryPoint)) {
+        throw new Error(`Expected WAM entrypoint does not exist: ${entryPoint}`)
+    }
+
     console.log(`${dir}/${plugin.path}: Validating category`)
     validateCategory(plugin)
     
@@ -42,7 +48,7 @@ const processPlugin = ((dir, plugin) => {
         category: plugin.category,
         thumbnail: plugin.thumbnail,
         version: plugin.version,
-        path: `${basename(dir)}/${plugin.path}`
+        path: `${basename(dir)}/${plugin.path}/index.js`
     }
 
     return entry
