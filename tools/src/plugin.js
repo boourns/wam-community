@@ -42,6 +42,7 @@ const processPlugin = ((dir, plugin) => {
     validateDescriptor(descriptor)
 
     let entry = {
+        identifier: descriptor.identifier,
         name: descriptor.name,
         vendor: descriptor.vendor,
         website: descriptor.website,

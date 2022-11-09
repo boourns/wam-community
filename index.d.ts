@@ -1,4 +1,5 @@
 export type Plugin = {
+  identifier: string
   name: string
   vendor: string
   website: string
