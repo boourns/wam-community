@@ -1,0 +1,16 @@
+{
+  "identifier": "com.wimmics.temper",
+  "name": "Temper",
+  "vendor": "Michel Buffa for making it a WAM, Q. Beauchet for GUI improvements, original code Nick Thomson (https://github.com/creativeintent/temper)",
+  "description": "Modern digital distortion. It builds upon traditional waveshaping techniques using modulated filter coefficients to produce a unique phase distortion.",
+  "version": "1.0.0",
+  "apiVersion": "1.0.0",
+  "thumbnail": "default.png",
+  "keywords": ["distortion"],
+  "isInstrument": false,
+  "website": "",
+  "hasAudioInput": true,
+  "hasAudioOutput": true,
+  "hasMidiInput": false,
+  "hasMidiOutput": false
+}

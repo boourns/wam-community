@@ -1,0 +1,8 @@
+[
+  "../../BigMuff",
+  "../../csoundPitchShifter/dist",
+  "../../quadrafuzz/dist",
+  "../../pingpongdelay/dist",
+  "../../WamExample/src",
+  "../../faustPingPongDelay/plugin"
+]

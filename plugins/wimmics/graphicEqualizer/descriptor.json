@@ -1,0 +1,16 @@
+{
+  "identifier": "com.wimmics.graphicequalizer",
+  "name": "GraphicEqualizer",
+  "vendor": "Michel Buffa",
+  "description": "A graphic equalizer proposing a bank of filters. Drag control points. Use shift+drag for peaking filters to adjust the curve",
+  "version": "1.0.0",
+  "apiVersion": "1.0.0",
+  "thumbnail": "",
+  "keywords": ["GraphicEqualizer"],
+  "isInstrument": false,
+  "website": "",
+  "hasAudioInput": true,
+  "hasAudioOutput": true,
+  "hasMidiInput": false,
+  "hasMidiOutput": false
+}

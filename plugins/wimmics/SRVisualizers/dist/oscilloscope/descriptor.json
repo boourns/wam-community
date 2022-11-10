@@ -1,0 +1,16 @@
+{
+    "identifier": "com.wimmics.oscilloscope",
+    "name": "Oscilloscope",
+    "vendor": "Shihong Ren",
+    "description": "TypeScript/React Oscilloscope WebAudioModule",
+    "version": "1.0.0",
+    "apiVersion": "1.0.0",
+    "thumbnail": "",
+    "keywords": ["oscilloscope", "visualization"],
+    "isInstrument": false,
+    "website": "",
+    "hasAudioInput": true,
+    "hasAudioOutput": true,
+    "hasMidiInput": false,
+    "hasMidiOutput": false
+}

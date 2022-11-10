@@ -66,7 +66,7 @@
         },
         {
             "path": "midi_input",
-            "category": ["MIDI", "External Device"]
+            "category": ["MIDI", "Utility"]
         },
         {
             "path": "pianoroll",
@@ -74,7 +74,7 @@
         },
         {
             "path": "simpleEQ",
-            "category": ["Effect", "EQ"]
+            "category": ["Effect", "Equalizer & Filter"]
         },	
         {
             "path": "synth101",

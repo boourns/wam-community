@@ -1,0 +1,16 @@
+{
+    "identifier": "com.wimmics.csoundpitchshifter",
+    "name": "Csound PitchShifter",
+    "vendor": "Steven Yi",
+    "description": "",
+    "version": "1.0.0",
+    "apiVersion": "1.0.0",
+    "thumbnail": "",
+    "keywords": ["PitchShifter"],
+    "isInstrument": false,
+    "website": "",
+    "hasAudioInput": true,
+    "hasAudioOutput": true,
+    "hasMidiInput": false,
+    "hasMidiOutput": false
+}

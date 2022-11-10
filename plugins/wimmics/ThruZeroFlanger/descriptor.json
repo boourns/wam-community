@@ -1,0 +1,16 @@
+{
+    "identifier": "com.wimmics.thruzeroflanger",
+    "name": "ThruZeroFlanger",
+    "vendor": "Michel Buffa for making it a WAM, Q. Beauchet for GUI improvements, author of the original Faust Code : Oli Larkin",
+    "description": "Thru-zero flanger that models a pair of tape delays with rate/depth/feedback/synchronization modes controls.",
+    "version": "1.0.0",
+    "apiVersion": "1.0.0",
+    "thumbnail": "",
+    "keywords": ["flanger"],
+    "isInstrument": false,
+    "website": "Original web site with faust code by O.Larkin : https://www.rebeltech.org/patch-library/patch/Thru_zero_flanger",
+    "hasAudioInput": true,
+    "hasAudioOutput": true,
+    "hasMidiInput": false,
+    "hasMidiOutput": false
+  }

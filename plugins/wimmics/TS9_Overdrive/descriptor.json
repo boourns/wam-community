@@ -1,0 +1,16 @@
+{
+  "identifier": "com.wimmics.ts9overdrive",
+  "name": "TS9Overdrive",
+  "vendor": "Michel Buffa for making it a WAM, Q. Beauchet for GUI improvements, original Faust code by the guitarix team",
+  "description": "A recreation of the classic TS9 overdrive pedal effect",
+  "version": "1.0.0",
+  "apiVersion": "1.0.0",
+  "thumbnail": "",
+  "keywords": ["overdrive"],
+  "isInstrument": false,
+  "website": "",
+  "hasAudioInput": true,
+  "hasAudioOutput": true,
+  "hasMidiInput": false,
+  "hasMidiOutput": false
+}
