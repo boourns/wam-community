@@ -1,0 +1,16 @@
+{
+  "identifier": "com.wimmics.dualpitchshifter",
+  "name": "DualPitchShifter",
+  "vendor": "Michel Buffa for making it a WAM, Q. Beauchet for GUI improvements, author of the original Faust Code : Oli Larkin",
+  "description": "Dual Pitch Shifter is a dual channel pitch shifter, based on Faust’s pitch_shifter.dsp by Grame. Pitch shifting is (intentionally) extremely basic and introduces significant delay based on window size.",
+  "version": "1.0.0",
+  "apiVersion": "1.0.0",
+  "thumbnail": "default.png",
+  "keywords": ["blipper"],
+  "isInstrument": false,
+  "website": "Original web site with faust code by O.Larkin : https://www.rebeltech.org/patch-library/patch/DualPitchShifter",
+  "hasAudioInput": true,
+  "hasAudioOutput": true,
+  "hasMidiInput": false,
+  "hasMidiOutput": false
+}
