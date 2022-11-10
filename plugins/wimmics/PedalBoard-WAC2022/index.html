@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PedalBoard</title>
+    <link rel="icon" href="data:," />
+
+    <script src="https://rawgit.com/paulirish/memory-stats.js/master/bookmarklet.js"></script>
+  </head>
+
+  <body>
+    <main>
+      <section id="state-menu">
+        <audio
+          id="player"
+          src="https://mainline.i3s.unice.fr/WebAudioPluginBank/BasketCaseGreendayriffDI.mp3"
+          controls
+          loop
+          crossorigin="anonymous"
+        ></audio>
+        <button id="save">Save state in cache</button>
+        <button id="restore">Restore state from cache</button>
+        <button id="delete">Delete cache</button>
+        <svg viewBox="0 0 80 80">
+          <circle id="inCache" class="circle" cx="40" cy="40" r="38" />
+        </svg>
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          enable-background="new 0 0 512 512"
+          id="download"
+        >
+          <g>
+            <g>
+              <path
+                d="M480.6,341.4c-11.3,0-20.4,9.1-20.4,20.4v98.4H51.8v-98.4c0-11.3-9.1-20.4-20.4-20.4c-11.3,0-20.4,9.1-20.4,20.4v118.8    c0,11.3,9.1,20.4,20.4,20.4h449.2c11.3,0,20.4-9.1,20.4-20.4V361.8C501,350.5,491.9,341.4,480.6,341.4z"
+              />
+              <path
+                d="m241,365.6c11.5,11.6 25.6,5.2 29.9,0l117.3-126.2c7.7-8.3 7.2-21.2-1.1-28.9-8.3-7.7-21.2-7.2-28.8,1.1l-81.9,88.1v-265.2c0-11.3-9.1-20.4-20.4-20.4-11.3,0-20.4,9.1-20.4,20.4v265.3l-81.9-88.1c-7.7-8.3-20.6-8.7-28.9-1.1-8.3,7.7-8.7,20.6-1.1,28.9l117.3,126.1z"
+              />
+            </g>
+          </g>
+        </svg>
+        <svg
+          version="1.1"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 512 512"
+          xmlns:xlink="http://www.w3.org/1999/xlink"
+          enable-background="new 0 0 512 512"
+          id="upload"
+        >
+          <g>
+            <g>
+              <path
+                d="m153.7,171.5l81.9-88.1v265.3c0,11.3 9.1,20.4 20.4,20.4 11.3,0 20.4-9.1 20.4-20.4v-265.3l81.9,88.1c7.7,8.3 20.6,8.7 28.9,1.1 8.3-7.7 8.7-20.6 1.1-28.9l-117.3-126.2c-11.5-11.6-25.6-5.2-29.9,0l-117.3,126.2c-7.7,8.3-7.2,21.2 1.1,28.9 8.2,7.6 21.1,7.2 28.8-1.1z"
+              />
+              <path
+                d="M480.6,341.2c-11.3,0-20.4,9.1-20.4,20.4V460H51.8v-98.4c0-11.3-9.1-20.4-20.4-20.4S11,350.4,11,361.6v118.8    c0,11.3,9.1,20.4,20.4,20.4h449.2c11.3,0,20.4-9.1,20.4-20.4V361.6C501,350.4,491.9,341.2,480.6,341.2z"
+              />
+            </g>
+          </g>
+        </svg>
+        <input type="file" id="upload-input" accept=".json" />
+      </section>
+      <section id="mount"></section>
+      <section id="automation">
+        <select id="param-select">
+          <option value="">Add Automation...</option>
+        </select>
+        <button id="automation-all">Apply automation to all</button>
+      </section>
+    </main>
+    <script type="module" src="host.js"></script>
+    <style>
+      #state-menu {
+        display: flex;
+        flex-direction: row;
+        gap: 8px;
+        align-items: center;
+        margin-bottom: 8px;
+      }
+
+      #state-menu > *,
+      #automation > * {
+        font-weight: bold;
+        font-size: larger;
+      }
+
+      #state-menu > svg {
+        fill: currentColor;
+        width: 30px;
+      }
+
+      #download,
+      #upload {
+        cursor: pointer;
+      }
+
+      #upload-input {
+        width: 0;
+      }
+
+      #inCache[data="true"] {
+        color: rgb(87, 245, 24);
+      }
+
+      #inCache[data="false"] {
+        color: rgb(94, 94, 94);
+      }
+
+      select > span {
+        color: red;
+      }
+
+      #param-select {
+        margin: 8px 0 8px 0;
+      }
+    </style>
+  </body>
+</html>

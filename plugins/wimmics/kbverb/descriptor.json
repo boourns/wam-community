@@ -1,0 +1,17 @@
+{
+    "identifier": "com.wimmics.kbverb",
+    "name": "KBVerb",
+    "vendor": "Michel Buffa for making it a WAM, Quentin Beauchet for improving the GUI, original faust code originated from Stephane Letz",
+    "description": "A reverb inspired by https://valhalladsp.com/2010/08/25/rip-keith-barr/",
+    "version": "1.0.0",
+    "apiVersion": "1.0.0",
+    "thumbnail": "",
+    "keywords": ["Reverb"],
+    "isInstrument": false,
+    "website": "",
+    "hasAudioInput": true,
+    "hasAudioOutput": true,
+    "hasMidiInput": false,
+    "hasMidiOutput": false
+  }
+  

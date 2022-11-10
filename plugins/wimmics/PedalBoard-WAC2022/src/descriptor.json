@@ -1,0 +1,16 @@
+{
+  "identifier": "com.wimmics.pedalboardwac2022",
+  "name": "PedalboardWAC2022",
+  "vendor": "Quentin Beauchet, Kouyoumdjian Pierre, Michael Marynowicz, Yann Forner.",
+  "description": "a WAM plugin that acts as a host for assembling other WAM plugins in effect chains",
+  "version": "1.0.0",
+  "apiVersion": "1.0.0",
+  "thumbnail": "",
+  "keywords": ["pedalboard"],
+  "isInstrument": false,
+  "website": "",
+  "hasAudioInput": true,
+  "hasAudioOutput": true,
+  "hasMidiInput": false,
+  "hasMidiOutput": false
+}

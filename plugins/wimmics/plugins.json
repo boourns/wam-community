@@ -1,0 +1,131 @@
+{
+    "plugins": [{
+            "path": "BigMuff",
+            "category": ["Effect", "Fuzz"]
+        },
+        {
+            "path": "blipper",
+            "category": ["Effect", "Blipper"]
+        },
+        {
+            "path": "csoundPitchShifter/dist",
+            "category": ["Effect", "Pitch Shifter"]
+        },
+        {
+            "path": "deathgate",
+            "category": ["Effect", "Noise Gate"]
+        },
+        {
+            "path": "disto_machine/src",
+            "category": ["Effect", "Guitar Amp Simulator"]
+        },
+        {
+            "path": "DualPitchShifter",
+            "category": ["Effect", "Pitch Shifter"]
+        },
+        {
+            "path": "graphicEqualizer",
+            "category": ["Effect", "Equalizer"]
+        },
+        {
+            "path": "greyhole",
+            "category": ["Effect", "Reverb"]
+        },
+        {
+            "path": "GuitarAmpSim60s",
+            "category": ["Effect", "Guitar Amp Simulator"]
+        },
+        {
+            "path": "kbverb",
+            "category": ["Effect", "Reverb"]
+        },
+        {
+            "path": "Kpp_fuzz",
+            "category": ["Effect", "Fuzz"]
+        },
+        {
+            "path": "kppdistorder",
+            "category": ["Effect", "Distortion"]
+        },
+        {
+            "path": "SRVisualizers/dist/livegain",
+            "category": ["Visualization", "Live Gain"]
+        },
+        {
+            "path": "SRVisualizers/dist/oscilloscope",
+            "category": ["Visualization", "Oscilloscope"]
+        },
+        {
+            "path": "SRVisualizers/dist/spectrogram",
+            "category": ["Visualization", "Spectrogram"]
+        },
+        {
+            "path": "SRVisualizers/dist/spectroscope",
+            "category": ["Visualization", "Spectroscope"]
+        },
+        {
+            "path": "OscTube",
+            "category": ["Effect", "Distortion"]
+        },
+        {
+            "path": "OverdriveRix",
+            "category": ["Effect", "Overdrive"]
+        },
+        {
+            "path": "OwlDirty",
+            "category": ["Effect", "Reverb"]
+        },
+        {
+            "path": "OwlShimmer",
+            "category": ["Effect", "Reverb"]
+        },
+        {
+            "path": "pedalboard/dist",
+            "category": ["Effect", "Pedalboard"]
+        },
+        {
+            "path": "Pedalboard-WAC2022/src",
+            "category": ["Effect", "Pedalboard"]
+        },
+        {
+            "path": "pingpongdelay/dist",
+            "category": ["Effect", "Delay"]
+        },
+        {
+            "path": "quadrafuzz/dist",
+            "category": ["Effect", "Fuzz"]
+        },
+        {
+            "path": "SmoothDelay",
+            "category": ["Effect", "Delay"]
+        },
+        {
+            "path": "StereoFreqShifter",
+            "category": ["Effect", "Frequency Shifter"]
+        },
+        {
+            "path": "stonephaser",
+            "category": ["Effect", "Phaser"]
+        },
+        {
+            "path": "sweetWah",
+            "category": ["Effect", "Wah Wah"]
+        },
+        {
+            "path": "temper",
+            "category": ["Effect", "Distortion"]
+        },
+        {
+            "path": "ThruZeroFlanger",
+            "category": ["Effect", "Flanger"]
+        },
+        {
+            "path": "TS9_Overdrive",
+            "category": ["Effect", "Overdrive"]
+        },
+        {
+            "path": "WeirdPhaser",
+            "category": ["Effect", "Phaser"]
+        }
+    ]
+}
