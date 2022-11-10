@@ -1,0 +1,16 @@
+{
+    "identifier": "com.wimmics.spectrogram",
+    "name": "Spectrogram",
+    "vendor": "Shihong Ren",
+    "description": "TypeScript/React Spectrogram WebAudioModule",
+    "version": "1.0.0",
+    "apiVersion": "1.0.0",
+    "thumbnail": "",
+    "keywords": ["spectrogram", "visualization"],
+    "isInstrument": false,
+    "website": "",
+    "hasAudioInput": true,
+    "hasAudioOutput": true,
+    "hasMidiInput": false,
+    "hasMidiOutput": false
+}

@@ -1,0 +1,17 @@
+{
+    "identifier": "com.wimmics.pingpongdelay",
+    "name": "PingPongDelay",
+    "vendor": "Michel Buffa for making it a WAM, Q. Beauchet for GUI improvements",
+    "description": "A classic Ping Pong Delay written using WebAudio standard nodes",
+    "version": "1.0.0",
+    "apiVersion": "1.0.0",
+    "thumbnail": "default.png",
+    "keywords": ["delay"],
+    "isInstrument": false,
+    "website": "",
+    "hasAudioInput": true,
+    "hasAudioOutput": true,
+    "hasMidiInput": false,
+    "hasMidiOutput": false
+  }
+  

@@ -1,0 +1,17 @@
+{
+    "identifier": "com.wimmics.reactpedalboard",
+    "name": "ReactPedalboard",
+    "vendor": "Dorian Chapoulié",
+    "description": "a WAM plugin written using React, that acts as a host for assembling other WAM plugins in effect chains",
+    "version": "1.0.0",
+    "apiVersion": "1.0.0",
+    "thumbnail": "",
+    "keywords": ["pedalboard"],
+    "isInstrument": false,
+    "website": "",
+    "hasAudioInput": true,
+    "hasAudioOutput": true,
+    "hasMidiInput": false,
+    "hasMidiOutput": false
+  }
+  

@@ -1,0 +1,16 @@
+{
+    "identifier": "com.wimmics.livegain",
+    "name": "LiveGain",
+    "vendor": "Shihong Ren",
+    "description": "TypeScript/React LiveGain WebAudioModule",
+    "version": "1.0.0",
+    "apiVersion": "1.0.0",
+    "thumbnail": "",
+    "keywords": ["gain", "visualization"],
+    "isInstrument": false,
+    "website": "",
+    "hasAudioInput": true,
+    "hasAudioOutput": true,
+    "hasMidiInput": false,
+    "hasMidiOutput": false
+}
