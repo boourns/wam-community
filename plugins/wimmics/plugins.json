@@ -126,6 +126,10 @@
         {
             "path": "WeirdPhaser",
             "category": ["Effect", "Modulation"]
+        },
+        {
+            "path": "StereoEnhancer",
+            "category": ["Effect", "Modulation"]
         }
     ]
 }

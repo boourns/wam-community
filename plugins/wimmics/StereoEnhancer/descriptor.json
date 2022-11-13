@@ -1,0 +1,16 @@
+{
+    "identifier": "com.wimmics.stereoenhancer",
+    "name": "Stereo Enhancer",
+    "vendor": "Wimmics",
+    "description": "Stereo Width/Enhancer effect using the Blumlein Shuffler technique. Author: Michel Buffa.",
+    "version": "1.0.0",
+    "apiVersion": "1.0.0",
+    "thumbnail": "default.png",
+    "keywords": ["stereo ennhancer"],
+    "isInstrument": false,
+    "website": "",
+    "hasAudioInput": true,
+    "hasAudioOutput": true,
+    "hasMidiInput": false,
+    "hasMidiOutput": false
+}
