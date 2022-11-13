@@ -1,8 +1,8 @@
 {
     "identifier": "com.wimmics.greyhole",
     "name": "Grey Hole",
-    "vendor": "Michel Buffa for making it a WAM, Quentin Beauchet for improving the GUI, original faust code Julian Parker, bug fixes by Till Bovermann",
-    "description": "A reverb insoired by the famous Blackhole effect",
+    "vendor": "",
+    "description": "A reverb insoired by the famous Eventinde/Blackhole effect. Authors: Michel Buffa for making it a WAM, Quentin Beauchet for improving the GUI, original faust code Julian Parker, bug fixes by Till Bovermann.",
     "version": "1.0.0",
     "apiVersion": "1.0.0",
     "thumbnail": "",

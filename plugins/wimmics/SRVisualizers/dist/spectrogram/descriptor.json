@@ -1,8 +1,8 @@
 {
     "identifier": "com.wimmics.spectrogram",
     "name": "Spectrogram",
-    "vendor": "Shihong Ren",
-    "description": "TypeScript/React Spectrogram WebAudioModule",
+    "vendor": "Wimmics",
+    "description": "TypeScript/React Spectrogram WebAudioModule. Author: Shihong Ren.",
     "version": "1.0.0",
     "apiVersion": "1.0.0",
     "thumbnail": "",

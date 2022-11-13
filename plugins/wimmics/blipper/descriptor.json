@@ -1,8 +1,8 @@
 {
     "identifier": "com.wimmics.blipper",
     "name": "Blipper",
-    "vendor": "Michel Buffa for making it a WAM, Q. Beauchet for GUI improvements, author of the original Faust Code : Oli Larkin",
-    "description": "Blipper is an Envelope Follower which controls the pitch of a triangle oscillator. It is a rough emulation of some of the features of the BOSS PC-2 Percussion Synthesiser. Arthur Russell used something like this to create interesting percussion parts on his records e.g. <https://www.youtube.com/watch?v=LEZevPziZhY>. It works nicely with drums.",
+    "vendor": "Wimmics",
+    "description": "Blipper is an Envelope Follower which controls the pitch of a triangle oscillator. It is a rough emulation of some of the features of the BOSS PC-2 Percussion Synthesiser. Arthur Russell used something like this to create interesting percussion parts on his records e.g. <https://www.youtube.com/watch?v=LEZevPziZhY>. It works nicely with drums. Authors: Michel Buffa for making it a WAM, Q. Beauchet for GUI improvements, original Faust Code : Oli Larkin",
     "version": "1.0.0",
     "apiVersion": "1.0.0",
     "thumbnail": "default.png",

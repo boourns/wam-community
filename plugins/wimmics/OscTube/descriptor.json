@@ -1,8 +1,8 @@
 {
     "identifier": "com.wimmics.osctube",
     "name": "OSCTube",
-    "vendor": "Michel Buffa for making it a WAM, Quentin Beauchet for improving the GUI, Guitarix Team for the original FAUST code",
-    "description": "Tube fuzz effect with vibrato, resonance and fuzz controls",
+    "vendor": "Wimmics",
+    "description": "Tube fuzz effect with vibrato, resonance and fuzz controls. Authors: Michel Buffa for making it a WAM, Quentin Beauchet for improving the GUI, Guitarix Team for the original FAUST code",
     "version": "1.0.0",
     "apiVersion": "1.0.0",
     "thumbnail": "",

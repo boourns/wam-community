@@ -1,8 +1,8 @@
 {
     "identifier": "com.wimmics.quadrafuzz",
     "name": "QuadraFuzz",
-    "vendor": "Michel Buffa for making it a WAM, Q. Beauchet for GUI improvements",
-    "description": "A multiband fuzz effect inspired by the Quadrafuzz VST",
+    "vendor": "Wimmics",
+    "description": "A multiband fuzz effect inspired by the Quadrafuzz VST. Authors: Michel Buffa, Q. Beauchet for GUI improvements",
     "version": "1.0.0",
     "apiVersion": "1.0.0",
     "thumbnail": "default.png",
