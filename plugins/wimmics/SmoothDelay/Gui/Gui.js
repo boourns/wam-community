@@ -475,11 +475,11 @@ export default class smoothDelayGui extends HTMLElement {
     this.boundingRect = {
       dataWidth: {
         type: Number,
-        value: null,
+        value: 258,
       },
       dataHeight: {
         type: Number,
-        value: null,
+        value: 280,
       },
     };
     return this.boundingRect;

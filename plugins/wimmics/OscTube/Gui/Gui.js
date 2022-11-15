@@ -353,11 +353,11 @@ export default class OscTubeGui extends HTMLElement {
     this.boundingRect = {
       dataWidth: {
         type: Number,
-        value: null,
+        value: 156,
       },
       dataHeight: {
         type: Number,
-        value: null,
+        value: 303,
       },
     };
     return this.boundingRect;

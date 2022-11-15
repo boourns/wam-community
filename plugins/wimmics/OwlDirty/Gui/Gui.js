@@ -411,11 +411,11 @@ export default class OwlDirtyGui extends HTMLElement {
     this.boundingRect = {
       dataWidth: {
         type: Number,
-        value: null,
+        value: 205,
       },
       dataHeight: {
         type: Number,
-        value: null,
+        value: 307,
       },
     };
     return this.boundingRect;

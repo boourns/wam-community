@@ -299,11 +299,11 @@ export default class OverdriveRixGui extends HTMLElement {
     this.boundingRect = {
       dataWidth: {
         type: Number,
-        value: null,
+        value: 206,
       },
       dataHeight: {
         type: Number,
-        value: null,
+        value: 257,
       },
     };
     return this.boundingRect;
