@@ -1,8 +1,8 @@
 {
     "identifier": "com.wimmics.stereofreqshifter",
     "name": "StereoFreqShifter",
-    "vendor": "Michel Buffa for making it a WAM, Q. Beauchet for GUI improvements, author of the original Faust Code : Oli Larkin",
-    "description": "Stereo Frequency Shifter is a twin frequency shifter with linked control of frequency shift for each channel, that can be slightly offset for lush stereo phasing.",
+    "vendor": "Wimmics",
+    "description": "Stereo Frequency Shifter is a twin frequency shifter with linked control of frequency shift for each channel, that can be slightly offset for lush stereo phasing. Authors: Michel Buffa for making it a WAM, Q. Beauchet for GUI improvements, original Faust Code : Oli Larkin",
     "version": "1.0.0",
     "apiVersion": "1.0.0",
     "thumbnail": "",

@@ -243,11 +243,11 @@ export default class deathgateGui extends HTMLElement {
     this.boundingRect = {
       dataWidth: {
         type: Number,
-        value: null,
+        value: 204,
       },
       dataHeight: {
         type: Number,
-        value: null,
+        value: 276,
       },
     };
     return this.boundingRect;

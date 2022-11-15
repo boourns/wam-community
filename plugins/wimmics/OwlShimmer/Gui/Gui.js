@@ -411,11 +411,11 @@ webaudio-switch{
     this.boundingRect = {
       dataWidth: {
         type: Number,
-        value: null,
+        value: 206,
       },
       dataHeight: {
         type: Number,
-        value: null,
+        value: 306,
       },
     };
     return this.boundingRect;

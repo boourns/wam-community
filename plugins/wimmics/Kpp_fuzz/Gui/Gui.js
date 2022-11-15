@@ -356,11 +356,11 @@ export default class Kpp_fuzzGui extends HTMLElement {
     this.boundingRect = {
       dataWidth: {
         type: Number,
-        value: null,
+        value: 206,
       },
       dataHeight: {
         type: Number,
-        value: null,
+        value: 309,
       },
     };
     return this.boundingRect;

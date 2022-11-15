@@ -858,11 +858,11 @@ window.requestAnimationFrame(this.handleAnimationFrame);
         this.boundingRect = {
             dataWidth: {
               type: Number,
-              value: null
+              value: 308
             },
             dataHeight: {
               type: Number,
-              value: null
+              value: 308
             }
         };
         return this.boundingRect;

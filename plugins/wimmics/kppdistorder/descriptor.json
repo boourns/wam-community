@@ -1,8 +1,8 @@
 {
   "identifier": "com.wimmics.kppdistorder",
-  "name": "kppdistorder",
-  "vendor": "Michel Buffa for making it a WAM, Quentin Beauchet for improving the GUI, Oleg Kapitonov is the author of the original FAUST code",
-  "description": "This plugin is a distortion pedal emulator with equalizer.",
+  "name": "KppDistorder",
+  "vendor": "Wimmics",
+  "description": "This plugin is a distortion pedal emulator with equalizer. Authors: Michel Buffa for making it a WAM, Quentin Beauchet for improving the GUI, Oleg Kapitonov for the original FAUST code",
   "version": "1.0.0",
   "apiVersion": "1.0.0",
   "thumbnail": "",

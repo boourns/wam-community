@@ -219,11 +219,11 @@ export default class BigMuffGui extends HTMLElement {
     this.boundingRect = {
       dataWidth: {
         type: Number,
-        value: 252.28689575195312,
+        value: 200,
       },
       dataHeight: {
         type: Number,
-        value: 313.81036376953125,
+        value: 262,
       },
     };
     return this.boundingRect;

@@ -472,11 +472,11 @@ webaudio-knob{
     this.boundingRect = {
       dataWidth: {
         type: Number,
-        value: null,
+        value: 206,
       },
       dataHeight: {
         type: Number,
-        value: null,
+        value: 307,
       },
     };
     return this.boundingRect;

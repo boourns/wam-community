@@ -250,11 +250,11 @@ webaudio-switch{
     this.boundingRect = {
       dataWidth: {
         type: Number,
-        value: null,
+        value: 205,
       },
       dataHeight: {
         type: Number,
-        value: null,
+        value: 306,
       },
     };
     return this.boundingRect;

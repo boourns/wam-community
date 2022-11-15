@@ -1101,11 +1101,11 @@ export default class compressorGui extends HTMLElement {
     this.boundingRect = {
       dataWidth: {
         type: Number,
-        value: null,
+        value: 305,
       },
       dataHeight: {
         type: Number,
-        value: null,
+        value: 356,
       },
     };
     return this.boundingRect;
