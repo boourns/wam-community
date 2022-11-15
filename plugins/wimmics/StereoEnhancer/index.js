@@ -1,7 +1,7 @@
   
-      import WebAudioModule from './utils/sdk/src/WebAudioModule.js';
-      import CompositeAudioNode from './utils/sdk-parammgr/src/CompositeAudioNode.js';
-      import ParamMgrFactory from './utils/sdk-parammgr/src/ParamMgrFactory.js';
+      import WebAudioModule from '../utils/sdk/src/WebAudioModule.js';
+      import CompositeAudioNode from '../utils/sdk-parammgr/src/CompositeAudioNode.js';
+      import ParamMgrFactory from '../utils/sdk-parammgr/src/ParamMgrFactory.js';
       import fetchModule from './fetchModule.js';
       import { createElement } from './Gui/index.js';
   
