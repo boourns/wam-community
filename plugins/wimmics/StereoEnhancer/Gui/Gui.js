@@ -1,4 +1,4 @@
-import '../utils/webaudio-controls.js'
+import '../../utils/webaudio-controls.js'
 
       const getBaseURL = () => {
         const base = new URL('.', import.meta.url);
