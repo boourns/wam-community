@@ -1,6 +1,6 @@
 {
   "name": "wam-community",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A collection of prebuilt Web Audio Modules ready for use",
   "main": "dist/index.js",
   "type": "module",
@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/boourns/wam-community#readme",
   "devDependencies": {
-    "burns-audio-wam": "^0.2.33",
+    "burns-audio-wam": "^0.2.34",
     "glob": "^8.0.3"
   }
 }

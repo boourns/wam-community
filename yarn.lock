@@ -21,10 +21,10 @@ __metadata:
   languageName: node
   linkType: hard
 
-"burns-audio-wam@npm:^0.2.33":
-  version: 0.2.33
-  resolution: "burns-audio-wam@npm:0.2.33"
-  checksum: 02c3a5d6de32ac2e3c4ee57dc96b66a6690709007f297c0afbc43a91e544ca5a917d9c8a96dde3441cce11a28812a645eb87d5435aa4566704229ce8934c6931
+"burns-audio-wam@npm:^0.2.34":
+  version: 0.2.34
+  resolution: "burns-audio-wam@npm:0.2.34"
+  checksum: 1818c7ca0716e26357888476a9c096afeab5e952689439452a0cc1bd25447dc222a28efdc2d9d2cb2fcc79e7ed142c66bad5d19b2ae1687856cd17dc4bb605ab
   languageName: node
   linkType: hard
 
@@ -87,7 +87,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "wam-community@workspace:."
   dependencies:
-    burns-audio-wam: ^0.2.33
+    burns-audio-wam: ^0.2.34
     glob: ^8.0.3
   languageName: unknown
   linkType: soft
