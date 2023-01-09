@@ -9,6 +9,10 @@
             "category": ["Effect", "Distortion"]
         },
         {
+            "path": "envmod",
+            "category": ["Modulation", "Modulator"]
+        },
+        {
             "path": "functionseq",
             "category": ["MIDI", "Sequencer"]
         },
