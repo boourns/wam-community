@@ -8,7 +8,7 @@
     "clean": "./tools/clean.sh",
     "build": "yarn install && node ./tools/build.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "publish": "yarn version patch && yarn up burns-audio-wam && yarn clean && yarn build && npm publish"
+    "prepublish": "yarn version patch && yarn up burns-audio-wam && yarn clean && yarn build"
   },
   "repository": {
     "type": "git",
