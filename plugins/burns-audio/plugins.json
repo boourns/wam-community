@@ -19,7 +19,11 @@
         {
             "path": "microkorg_editor",
             "category": ["MIDI", "External Device"]
-        },		
+        },
+        {
+            "path": "jx3p_editor",
+            "category": ["MIDI", "External Device"]
+        },
         {
             "path": "midi_output",
             "category": ["MIDI", "Utility"]
