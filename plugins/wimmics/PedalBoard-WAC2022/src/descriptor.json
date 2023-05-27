@@ -5,7 +5,7 @@
   "description": "A WAM plugin that acts as a host for assembling other WAM plugins in effect chains. Authors: Quentin Beauchet, Kouyoumdjian Pierre, Michael Marynowicz, Yann Forner.",
   "version": "1.0.0",
   "apiVersion": "1.0.0",
-  "thumbnail": "",
+  "thumbnail": "screenshot.png",
   "keywords": ["pedalboard"],
   "isInstrument": false,
   "website": "",

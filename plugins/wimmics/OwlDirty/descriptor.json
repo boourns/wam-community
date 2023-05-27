@@ -5,7 +5,7 @@
   "description": "A stereo ambient reverberation with a distortion stage on the reverb tail. Authors: Michel Buffa for making it a WAM, Quentin Beauchet for improving the GUI, original faust code by Xavier (https://www.rebeltech.org/patch-library/patch/Owlgazer_Dirty_Reverb/)",
   "version": "1.0.0",
   "apiVersion": "1.0.0",
-  "thumbnail": "",
+  "thumbnail": "default.png",
   "keywords": ["Reverb"],
   "isInstrument": false,
   "website": "",

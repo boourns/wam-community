@@ -69,10 +69,6 @@
             "category": ["Effect", "Delay"]
         },		
         {
-            "path": "external_instrument",
-            "category": ["MIDI", "External Device"]
-        },
-        {
             "path": "midi_input",
             "category": ["MIDI", "Utility"]
         },

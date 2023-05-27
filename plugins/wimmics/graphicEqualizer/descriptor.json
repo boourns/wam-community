@@ -5,7 +5,7 @@
   "description": "A graphic equalizer proposing a bank of filters. Drag control points. Use shift+drag for peaking filters to adjust the curve. Author: Michel Buffa.",
   "version": "1.0.0",
   "apiVersion": "1.0.0",
-  "thumbnail": "",
+  "thumbnail": "screenshot.png",
   "keywords": ["GraphicEqualizer"],
   "isInstrument": false,
   "website": "",

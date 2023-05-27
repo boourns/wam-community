@@ -28,6 +28,10 @@ const validateDescriptor = (descriptor) => {
     if (!descriptor.name || descriptor.name == "") {
         throw new Error("Descriptor must have a non-blank name")
     }
+    if (!descriptor.thumbnail || descriptor.thumbnail == "") {
+        throw new Error("Thumbnail must exist")
+    }
+
 }
 
 /**
@@ -47,6 +51,11 @@ const processPlugin = ((dir, plugin) => {
     const descriptor = JSON.parse(readFileSync(`${dir}/${plugin.path}/descriptor.json`))
     validateDescriptor(descriptor)
 
+    const thumbnail = `${dir}/${plugin.path}/${descriptor.thumbnail}`
+    if (!existsSync(thumbnail)) {
+        throw new Error(`Thumbnail missing: ${thumbnail}`)
+    }
+    
     let entry = {
         identifier: descriptor.identifier,
         name: descriptor.name,

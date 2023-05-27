@@ -5,7 +5,7 @@
     "description": "This plugin is a multiband noise gate, works pretty well with distorded guitars, drums, bass, etc. Authors: Michel Buffa for making it a WAM, Quentin Beauchet for improving the GUI, Oleg Kapitonov for the original FAUST code",
     "version": "1.0.0",
     "apiVersion": "1.0.0",
-    "thumbnail": "",
+    "thumbnail": "screenshot.png",
     "keywords": ["noisegate"],
     "website": "",
     "hasAudioInput": true,
