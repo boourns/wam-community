@@ -25,6 +25,10 @@
             "category": ["MIDI", "External Device"]
         },
         {
+            "path": "ob6",
+            "category": ["MIDI", "External Device"]
+        },
+        {
             "path": "midi_output",
             "category": ["MIDI", "Utility"]
         },
