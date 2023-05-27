@@ -30,57 +30,62 @@ const packageFiles = (dir) => {
   console.log("")
 }
 
-console.log("[1/3] Packaging plugins into ./dist")
-sync('./plugins/*').forEach(collection => packageFiles(collection))
-
-console.log("[2/3] Compiling Plugin metadata")
-var metadata = []
-sync( './dist/plugins/*' ).forEach(collection => {
-  const data = compileMetadata(collection)
-  metadata.push(...data)
-})
-
-console.log("Writing ./dist/plugins.json")
-writeFileSync("./dist/plugins.json", JSON.stringify(metadata, undefined, 2))
-
-console.log("[3/3] Writing dist/index.js")
-let vendors = []
-metadata.forEach(m => {
-  if (!vendors.includes(m.vendor)) {
-    vendors.push(m.vendor)
+const main = async () => {
+  console.log("[1/3] Packaging plugins into ./dist")
+  sync('./plugins/*').forEach(collection => packageFiles(collection))
+  
+  console.log("[2/3] Compiling Plugin metadata")
+  var metadata = []
+  const collections = sync( './dist/plugins/*' )
+  for (let collection of collections) {
+    const data = await compileMetadata(collection)
+    metadata.push(...data)
   }
-})
-
-let keywords = []
-metadata.forEach(m => {
-  m.keywords.forEach(t => {
-    if (!keywords.includes(t)) {
-      keywords.push(t)
+  
+  console.log("Writing ./dist/plugins.json")
+  writeFileSync("./dist/plugins.json", JSON.stringify(metadata, undefined, 2))
+  
+  console.log("[3/3] Writing dist/index.js")
+  let vendors = []
+  metadata.forEach(m => {
+    if (!vendors.includes(m.vendor)) {
+      vendors.push(m.vendor)
     }
   })
-})
+  
+  let keywords = []
+  metadata.forEach(m => {
+    m.keywords.forEach(t => {
+      if (!keywords.includes(t)) {
+        keywords.push(t)
+      }
+    })
+  })
+  
+  const code = `
+  const Plugins = ${JSON.stringify(metadata, undefined, 2)};
+  
+  const Vendors = ${JSON.stringify(vendors, undefined, 2)};
+  
+  const Categories = ${JSON.stringify(categories, undefined, 2)};
+  
+  const Keywords = ${JSON.stringify(keywords, undefined, 2)};
+  
+  const WAMCommunity = {
+    Plugins,
+    Categories,
+    Vendors,
+    Keywords
+  };
+  
+  export {Plugins, Categories, Vendors, Keywords};
+  
+  export default WAMCommunity;
+  
+  `
+  writeFileSync("./dist/index.js", code)
+  
+  cpSync("./index.d.ts", `./dist/index.d.ts`)
+}
 
-const code = `
-const Plugins = ${JSON.stringify(metadata, undefined, 2)};
-
-const Vendors = ${JSON.stringify(vendors, undefined, 2)};
-
-const Categories = ${JSON.stringify(categories, undefined, 2)};
-
-const Keywords = ${JSON.stringify(keywords, undefined, 2)};
-
-const WAMCommunity = {
-  Plugins,
-  Categories,
-  Vendors,
-  Keywords
-};
-
-export {Plugins, Categories, Vendors, Keywords};
-
-export default WAMCommunity;
-
-`
-writeFileSync("./dist/index.js", code)
-
-cpSync("./index.d.ts", `./dist/index.d.ts`)
+await main()

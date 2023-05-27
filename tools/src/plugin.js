@@ -1,5 +1,6 @@
 import { existsSync, readFileSync } from 'fs'
 import { basename } from 'path'
+import sharp from 'sharp'
 
 const categories = JSON.parse(readFileSync('./categories.json'))["categories"]
 
@@ -37,7 +38,7 @@ const validateDescriptor = (descriptor) => {
 /**
  * processPlugin validates a single plugin entry
  */
-const processPlugin = ((dir, plugin) => {
+const processPlugin = async (dir, plugin) => {
     console.log(`${dir}/${plugin.path}: Confirming entry point exists`)
     const entryPoint = `${dir}/${plugin.path}/index.js`
     if (!existsSync(entryPoint)) {
@@ -55,6 +56,8 @@ const processPlugin = ((dir, plugin) => {
     if (!existsSync(thumbnail)) {
         throw new Error(`Thumbnail missing: ${thumbnail}`)
     }
+
+    const dimensions = await calculateImageDimensions(thumbnail)
     
     let entry = {
         identifier: descriptor.identifier,
@@ -64,22 +67,33 @@ const processPlugin = ((dir, plugin) => {
         description: descriptor.description,
         keywords: descriptor.keywords,
         category: plugin.category,
-        thumbnail: plugin.thumbnail,
+        thumbnail: `${basename(dir)}/${plugin.path}/${descriptor.thumbnail}`,
+        thumbnailDimensions: dimensions,
         version: plugin.version,
         path: `${basename(dir)}/${plugin.path}/index.js`
     }
 
     return entry
-})
+}
 
 /**
 * compileMetadata reads the plugin list from a collection, reads the plugin descriptor.json files, validates and compiles them all into one document
 * @param {string} dir 
 */
-const compileMetadata = (dir) => {
-    console.log(`Reading plugin list for ${dir}`)
+const compileMetadata = async (dir) => {
     const plugins = JSON.parse(readFileSync(`${dir}/plugins.json`))
-    return plugins["plugins"].map(plugin => processPlugin(dir, plugin))
+
+    let result = []
+    for (let plugin of plugins["plugins"]) {
+        result.push(await processPlugin(dir, plugin))
+    }
+    return result
+}
+
+const calculateImageDimensions = async (imageFile) => {
+    const metadata = await sharp(imageFile).metadata()
+    
+    return { width: metadata.width, height: metadata.height };
 }
 
 
