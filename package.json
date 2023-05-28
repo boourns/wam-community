@@ -1,14 +1,13 @@
 {
   "name": "wam-community",
-  "version": "0.4.2",
+  "version": "0.4.4",
   "description": "A collection of prebuilt Web Audio Modules ready for use",
   "main": "dist/index.js",
   "type": "module",
   "scripts": {
     "clean": "./tools/clean.sh",
     "build": "yarn install && node ./tools/build.js",
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "prepublish": "yarn version patch && yarn up burns-audio-wam && yarn clean && yarn build"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -29,7 +28,8 @@
   },
   "homepage": "https://github.com/boourns/wam-community#readme",
   "devDependencies": {
-    "burns-audio-wam": "^0.2.48",
-    "glob": "^8.0.3"
+    "burns-audio-wam": "^0.2.50",
+    "glob": "^8.0.3",
+    "sharp": "^0.32.1"
   }
 }

@@ -25,6 +25,10 @@
             "category": ["MIDI", "External Device"]
         },
         {
+            "path": "ob6_editor",
+            "category": ["MIDI", "External Device"]
+        },
+        {
             "path": "midi_output",
             "category": ["MIDI", "Utility"]
         },
@@ -68,10 +72,6 @@
             "path": "delay",
             "category": ["Effect", "Delay"]
         },		
-        {
-            "path": "external_instrument",
-            "category": ["MIDI", "External Device"]
-        },
         {
             "path": "midi_input",
             "category": ["MIDI", "Utility"]

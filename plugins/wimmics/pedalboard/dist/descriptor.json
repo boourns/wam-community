@@ -5,7 +5,7 @@
     "description": "A WAM plugin written using React, that acts as a host for assembling other WAM plugins in effect chains. Author: Dorian Chapoulié.",
     "version": "1.0.0",
     "apiVersion": "1.0.0",
-    "thumbnail": "",
+    "thumbnail": "screenshot.png",
     "keywords": ["pedalboard"],
     "isInstrument": false,
     "website": "",

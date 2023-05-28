@@ -5,7 +5,7 @@
     "description": "An autowah effect with modulation. Authors: Michel Buffa for making it a WAM, Q. Beauchet for GUI improvements, original faust code https://github.com/pingdynasty/OwlPatches/blob/master/Faust/SweepWah.dsp",
     "version": "1.0.0",
     "apiVersion": "1.0.0",
-    "thumbnail": "An autowah effect",
+    "thumbnail": "screenshot.png",
     "keywords": ["wahwah"],
     "isInstrument": false,
     "website": "",
