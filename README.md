@@ -4,7 +4,13 @@ A collection of built Web Audio Modules ready for use
 # Goal
 Package and deliver a collection of high quality Web Audio Modules (WAMs), ready to be used in audio software without further build steps.
 
-# How to use this repository
+# How to use these plugins without hosting them
+
+The most recent wam-community release is hosted at https://www.webaudiomodules.com/community.  A JSON index describing all available plugins (with links to each plugin) is available at https://www.webaudiomodules.com/community/plugins.json.  Your application may download that file to build a plugin list.  Note that some plugins require certain wam extensions implemented on your host, so some plugins may not be suitable to list in all situations.
+
+# How to add this repository to your application
+To include your own copies of these plugins with your application or host them on your website, you can add wam-community to your website.
+
 The easiest way to use this WAM collection is to install them with npm or yarn:
 ```
 yarn add wam-community
