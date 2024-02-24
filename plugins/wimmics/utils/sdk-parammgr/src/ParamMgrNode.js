@@ -44,6 +44,8 @@ export default class ParamMgrNode extends AudioWorkletNode {
 		this.paramsUpdateCheckFn = [];
 		this.paramsUpdateCheckFnRef = [];
 		this.messageRequestId = 0;
+		/** Fixes Chromium bug: https://issues.chromium.org/issues/324293899, allowing automating AudioParams */
+		this.dummyGainNode = module.audioContext.createGain();
 
 		Object.entries(this.getParams()).forEach(([name, param]) => {
 			Object.setPrototypeOf(param, MgrAudioParam.prototype);
@@ -118,6 +120,8 @@ export default class ParamMgrNode extends AudioWorkletNode {
 				} finally {
 					config.value = Math.max(0, config.minValue);
 					this.connect(config, offset + i);
+					// Fix Chromium bug: https://issues.chromium.org/issues/324293899
+					this.connect(this.dummyGainNode, offset + i, 0);
 				}
 			} else if (config instanceof AudioNode) {
 				this.connect(config, offset + i);
