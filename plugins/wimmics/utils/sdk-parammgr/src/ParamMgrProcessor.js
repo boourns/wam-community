@@ -266,8 +266,8 @@ const processor = (moduleId, paramsConfig) => {
 					} else { // No need to modify
 						out = raw;
 					}
-					if (out.length === 1) outputs[j + outputOffset][0].fill(out[0]);
-					else outputs[j + outputOffset][0].set(out);
+					if (out.length === 1) outputs[j + outputOffset][0]?.fill(out[0]);
+					else outputs[j + outputOffset][0]?.set(out);
 					this.$internalParamsBuffer[j] = out[0];
 				});
 			});
